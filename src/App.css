@@ -1,0 +1,31 @@
+.App{
+ 
+  height: 90vh;
+  
+}
+.App .navbar button{
+  height: 35px;
+  margin-left: 200px;
+  width: 80px;
+  background-color: rgb(219, 33, 95);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.navbar{
+  
+  width: 99.99%;
+  
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom{
+  height: 90%;
+  margin-top: -20px;
+  text-align: center ;
+}
+.bottom h2{
+  color: rgb(244, 47, 112);
+}

@@ -16,10 +16,10 @@
   
   width: 99.99%;
   
-  height: 12vh;
+  /* height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .bottom{
   height: 90%;

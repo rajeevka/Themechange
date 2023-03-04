@@ -1,7 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import Comp from "./Comp";
-import Header from "./Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Contact from "./Contact";
+import Service from "./Service";
+
 
 function App() {
    const [darkTheme, setDarkTheme] = useState({
@@ -9,10 +12,26 @@ function App() {
      color: "black",
    });
   return (
-    <div className="App">
-      <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
-      <Comp darkTheme={darkTheme} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home darkTheme={darkTheme} setDarkTheme={setDarkTheme} />}
+        ></Route>
+        <Route
+          path="Contact"
+          element={
+            <Contact darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+          }
+        ></Route>
+        <Route
+          path="Service"
+          element={
+            <Service darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+          }
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
